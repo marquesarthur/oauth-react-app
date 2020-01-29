@@ -1,0 +1,27 @@
+{
+  "compilerOptions": {
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "pretty": true,
+    "sourceMap": true,
+    "target": "es6",
+    "outDir": "./dist",
+
+  },
+  "include": ["src/**/*.ts"],
+  "exclude": [
+    "node_modules",
+    ".vscode"
+  ],
+  "nodemonConfig": {
+    "ignore": [
+      "**/*.test.ts",
+      "**/*.spec.ts",
+      ".git",
+      "node_modules"
+    ],
+    "watch": ["src"],
+    "exec": "npm start",
+    "ext": "ts"
+  }
+}

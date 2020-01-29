@@ -1,0 +1,35 @@
+{
+  "name": "oauth-backend-rest",
+  "version": "1.0.0",
+  "description": "Backend of new oath-rest API system",
+  "main": "index.js",
+  "scripts": {
+    "start": "node -r ts-node/register ./src/index.js",
+    "start:watch": "nodemon ./src/index.ts",
+    "build": "tsc"
+  },
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "body-parser": "^1.19.0",
+    "express": "^4.17.1",
+    "sequelize": "^5.21.3",
+    "sqlite": "^3.0.3"
+  },
+  "devDependencies": {
+    "@types/bluebird": "^3.5.29",
+    "@types/express": "^4.17.2",
+    "@types/fs-extra": "^8.0.1",
+    "@types/node": "^13.5.1",
+    "@types/sequelize": "^4.28.8",
+    "@types/shelljs": "^0.8.6",
+    "@types/validator": "^12.0.1",
+    "fs-extra": "^8.1.0",
+    "nodemon": "^2.0.2",
+    "npm-run-all": "^4.1.5",
+    "rimraf": "^3.0.1",
+    "shelljs": "^0.8.3",
+    "ts-node": "^8.6.2",
+    "typescript": "^3.7.5"
+  }
+}
